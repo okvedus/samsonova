@@ -1,0 +1,78 @@
+@n:animation;
+@a:name;
+@d:duration;
+@f:fill-mode;
+@t:timing-function;
+@i:iteration-count;
+@we:-webkit;
+@m:-moz;
+
+
+.anima(@an){
+@{n}-@{a}:@an;
+@{we}-@{n}-@{a}:@an;
+@{m}-@{n}-@{a}:@an;
+}
+
+.animad(@and){
+@{n}-@{d}: @and;
+@{we}-@{n}-@{d}:@and;
+@{m}-@{n}-@{d}: @and;
+}
+
+.animat(@ant){
+@{n}-@{t}: @ant;
+@{we}-@{n}-@{t}: @ant;
+@{m}-@{n}-@{t}: @ant;
+}
+
+.animaf(@anf){
+@{n}-@{f}:@anf;
+@{we}-@{n}-@{f}:@anf;
+@{m}-@{n}-@{f}:@anf;
+}
+
+.animai(@ani){
+@{n}-@{i}: @ani;
+@{we}-@{n}-@{i}: @ani;
+@{m}-@{n}-@{i}: @ani;
+}
+
+.cinm1, .cinm2{
+margin:10px;
+width:50px;
+height:50px;
+background-color:yellow;
+}
+
+// cinm1
+.cinm1{
+.anima(an);
+.animad(12s);
+.animat(ease);
+.animaf(forward);
+.animai(infinite);
+}
+     
+@keyframes an{
+      40%{
+width:20px;
+height:20px;
+      }
+}
+
+ // cinm2
+.cinm2{
+.anima(an1);
+.animad(13s);
+.animat(ease);
+.animaf(forward);
+.animai(infinite);
+}
+     
+@keyframes an1{
+      40%{
+width:40px;
+height:60px;
+      }
+}
